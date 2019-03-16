@@ -1,0 +1,15 @@
+.side{
+    width: 20%;
+    float: left;
+    background: blue;
+}
+
+.main{
+    width: 80%;
+    float: right;
+    background: red;
+}
+
+.clear{
+    clear:both;
+}
