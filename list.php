@@ -1,6 +1,7 @@
 <?php
     require_once 'functions/db_manager.php';
     
+    /*データベースに投稿したタイトルと本文をリストにして表示*/
     $db = getDb();
     
     $stt = $db->prepare("SELECT * FROM blogs");
