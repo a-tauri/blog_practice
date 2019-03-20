@@ -13,15 +13,17 @@
         <p>サイド</p>
         <ul>
             <li><a href="list.php">ブログ一覧</a></li>
-            <li>カテゴリ</li>
+            <li><a href="category_list.php">カテゴリ一覧</a></li>
         </ul>
     </div>
     <div class="main">
         <p>メイン</p>
         <p>こちらはメインコンテンツ</p>
         <form action="blog_post.php" method="post">
+            <p>タイトル</p>
             <input type="text" name="tytle"></br>
-            <textarea name="article" cols="5" rows="3"></textarea>
+            <p>記事内容</p>
+            <textarea name="article" cols="20" rows="10"></textarea><br>
             <input type="submit" value="投稿">
         </form>
     </div>

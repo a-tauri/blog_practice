@@ -1,13 +1,13 @@
 .side{
     width: 20%;
     float: left;
-    background: blue;
+    background: #add8e6;
 }
 
 .main{
     width: 80%;
     float: right;
-    background: red;
+    background: #fff8dc;
 }
 
 .clear{

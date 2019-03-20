@@ -1,7 +1,7 @@
 <?php
     require_once ('functions/db_manager.php');
 //    echo $_GET['text'];
-    
+    //list.phpからリンクした記事の詳細
     $id = f($_GET['text']);
     $db = getDb();
     $stt = $db->prepare("SELECT * FROM blogs WHERE id = :id");
