@@ -1,15 +1,17 @@
 <?php
     require_once ('functions/db_manager.php');
+    require_once ('functions/searchClass.php');
 
 
     $id = f($_GET['category']);
-    $db = getDb();
-    $stt = $db->prepare("SELECT * FROM category WHERE id = :id");
-    $stt->bindValue(':id',$id);
-    $stt->execute();
+    // $db = getDb();
+    // $stt = $db->prepare("SELECT * FROM category WHERE id = :id");
+    // $stt->bindValue(':id',$id);
+    // $stt->execute();
 
-    $fet = $stt->fetch(PDO::FETCH_ASSOC);
-
+    // $fet = $stt->fetch(PDO::FETCH_ASSOC);
+    $s = new searchClass();
+    $fet = $s->getData($id, 'category');
 
 ?>
    

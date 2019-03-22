@@ -1,14 +1,17 @@
 <?php
     require_once ('functions/db_manager.php');
+    require_once ('functions/searchClass.php');
 //    echo $_GET['text'];
     //list.phpからリンクした記事の詳細
     $id = f($_GET['text']);
-    $db = getDb();
-    $stt = $db->prepare("SELECT * FROM blogs WHERE id = :id");
-    $stt->bindValue(':id',$id);
-    $stt->execute();
+    // $db = getDb();
+    // $stt = $db->prepare("SELECT * FROM blogs WHERE id = :id");
+    // $stt->bindValue(':id',$id);
+    // $stt->execute();
     
-    $fet = $stt->fetch(PDO::FETCH_ASSOC);
+    // $fet = $stt->fetch(PDO::FETCH_ASSOC);
+    $search = new searchClass();
+    $fet = $search->getData($id, 'blogs')
 
 //    var_dump($fet);
 ?>
