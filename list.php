@@ -17,4 +17,5 @@
         echo $v["id"]." ";
         echo $v["title"]." ";
         echo $v["created_at"]."</a><br>";
+//        echo "<button>削除</button><br>";
     }
